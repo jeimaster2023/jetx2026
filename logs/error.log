@@ -1,0 +1,1169 @@
+2026-05-13 19:27:23 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:00:42 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:00:46 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:00:49 [ERROR] errors — IA falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 103, in get_ai_interpretation
+    response = await client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:00:49 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:00:56 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:00:59 [ERROR] errors — IA falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 103, in get_ai_interpretation
+    response = await client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:00:59 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:07:27 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:07:28 [ERROR] errors — IA falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 103, in get_ai_interpretation
+    response = await client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:07:29 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:07:42 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:08:35 [ERROR] errors — Error leyendo frame | Error: Locator.all_inner_texts: Execution context was destroyed, most likely because of a navigation
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\browser\scraper.py", line 146, in _read_latest_value
+    items = await frame.locator(_ITEM_SELECTOR).all_inner_texts()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\playwright\async_api\_generated.py", line 17105, in all_inner_texts
+    return mapping.from_maybe_impl(await self._impl_obj.all_inner_texts())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_locator.py", line 654, in all_inner_texts
+    return await self._frame.eval_on_selector_all(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_frame.py", line 405, in eval_on_selector_all
+    await self._channel.send(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_connection.py", line 514, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Locator.all_inner_texts: Execution context was destroyed, most likely because of a navigation
+2026-05-13 20:09:01 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:09:59 [ERROR] errors — IA falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 103, in get_ai_interpretation
+    response = await client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:09:59 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:10:14 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:10:14 [ERROR] errors — IA falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 103, in get_ai_interpretation
+    response = await client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:10:15 [ERROR] errors — Telegram error | ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 575, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\Python311\Lib\asyncio\sslproto.py", line 557, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\tg_bot\notifier_v2.py", line 57, in _send_raw
+    async with session.post(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\aiohttp\connector.py", line 1327, in _wrap_create_connection
+    raise ClientConnectorCertificateError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host api.telegram.org:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)')]
+2026-05-13 20:30:03 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:34:34 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:37:56 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:42:42 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:46:38 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:49:47 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:52:59 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 20:56:51 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 21:02:59 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 21:06:50 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 21:09:57 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 21:13:05 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 21:21:52 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 21:21:53 [ERROR] errors — Error procesando ronda val=3.56 | UnboundLocalError: cannot access local variable 'sig_id' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\main_v3.py", line 396, in run
+    "✅ Señal #%d emitida | mode=%s target=%.1fx conf=%d%% "
+UnboundLocalError: cannot access local variable 'sig_id' where it is not associated with a value
+2026-05-13 21:25:01 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 21:31:07 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 21:51:35 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 21:51:36 [ERROR] errors — Error procesando ronda val=2.13 | UnboundLocalError: cannot access local variable 'sig_id' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\main_v3.py", line 402, in run
+    "✅ Señal #%d emitida | mode=%s target=%.1fx conf=%d%% "
+UnboundLocalError: cannot access local variable 'sig_id' where it is not associated with a value
+2026-05-13 21:55:21 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 21:55:22 [ERROR] errors — Error procesando ronda val=1.77 | UnboundLocalError: cannot access local variable 'sig_id' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\main_v3.py", line 402, in run
+    "✅ Señal #%d emitida | mode=%s target=%.1fx conf=%d%% "
+UnboundLocalError: cannot access local variable 'sig_id' where it is not associated with a value
+2026-05-13 21:58:51 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 21:58:52 [ERROR] errors — Error procesando ronda val=1.33 | UnboundLocalError: cannot access local variable 'sig_id' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\main_v3.py", line 402, in run
+    "✅ Señal #%d emitida | mode=%s target=%.1fx conf=%d%% "
+UnboundLocalError: cannot access local variable 'sig_id' where it is not associated with a value
+2026-05-13 22:02:08 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 22:05:52 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 22:09:18 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 22:12:38 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 22:16:07 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 22:21:07 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 22:25:34 [ERROR] errors — IA Groq falló — usando fallback local | BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\analyzer\ai_analyzer.py", line 162, in get_ai_vote
+    response = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\resources\chat\completions.py", line 941, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1856, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\groq\_base_client.py", line 1655, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-13 22:38:52 [ERROR] errors — Error fatal en el loop principal | TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+navigating to "https://betplay.com.co/", waiting until "domcontentloaded"
+Traceback (most recent call last):
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\main_v3.py", line 433, in <module>
+    asyncio.run(run())
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\main_v3.py", line 163, in run
+    async with JetXScraper() as scraper:
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\browser\scraper.py", line 60, in __aenter__
+    await self._launch()
+  File "C:\Users\Jeysson C\Downloads\jetx_v3_completo\jetx_v3\browser\scraper.py", line 90, in _launch
+    await self._page.goto(BETPLAY_URL, wait_until="domcontentloaded", timeout=60_000)
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\playwright\async_api\_generated.py", line 8657, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_page.py", line 519, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jeysson C\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_connection.py", line 514, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+navigating to "https://betplay.com.co/", waiting until "domcontentloaded"
+

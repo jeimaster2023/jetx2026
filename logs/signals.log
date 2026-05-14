@@ -1,0 +1,31 @@
+2026-05-13 20:00:42 [INFO] signals — type=moon target=10.0x hunter_score=30 moon_score=20 confidence=10% last_val=1.60
+2026-05-13 20:00:49 [INFO] signals — type=moon target=10.0x hunter_score=55 moon_score=49 confidence=29% last_val=1.01
+2026-05-13 20:00:59 [INFO] signals — type=moon target=10.0x hunter_score=54 moon_score=49 confidence=29% last_val=1.34
+2026-05-13 20:07:28 [INFO] signals — type=moon target=10.0x hunter_score=54 moon_score=39 confidence=24% last_val=1.33
+2026-05-13 20:09:59 [INFO] signals — type=moon target=10.0x hunter_score=58 moon_score=45 confidence=28% last_val=1.25
+2026-05-13 20:10:14 [INFO] signals — type=moon target=10.0x hunter_score=59 moon_score=44 confidence=27% last_val=1.72
+2026-05-13 20:30:04 [INFO] signals — type=hunter target=5.0x hunter_score=23 moon_score=0 confidence=13% last_val=1.10
+2026-05-13 20:34:34 [INFO] signals — type=moon target=20.0x hunter_score=76 moon_score=60 confidence=30% last_val=1.31
+2026-05-13 20:37:56 [INFO] signals — type=moon target=50.0x hunter_score=96 moon_score=95 confidence=45% last_val=3.99
+2026-05-13 20:42:42 [INFO] signals — type=moon target=10.0x hunter_score=59 moon_score=50 confidence=25% last_val=3.99
+2026-05-13 20:46:38 [INFO] signals — type=moon target=10.0x hunter_score=67 moon_score=50 confidence=25% last_val=2.13
+2026-05-13 20:49:47 [INFO] signals — type=moon target=10.0x hunter_score=66 moon_score=39 confidence=20% last_val=1.42
+2026-05-13 20:52:59 [INFO] signals — type=moon target=10.0x hunter_score=69 moon_score=50 confidence=25% last_val=1.67
+2026-05-13 20:56:51 [INFO] signals — type=moon target=10.0x hunter_score=40 moon_score=45 confidence=22% last_val=2.96
+2026-05-13 21:02:59 [INFO] signals — type=safe target=2.5x score=38.0 confidence=40% last_val=2.71
+2026-05-13 21:06:50 [INFO] signals — type=moon target=10.0x hunter_score=55 moon_score=40 confidence=20% last_val=4.17
+2026-05-13 21:09:57 [INFO] signals — type=moon target=10.0x hunter_score=23 moon_score=27 confidence=18% last_val=1.27
+2026-05-13 21:13:05 [INFO] signals — type=hunter target=5.0x hunter_score=48 moon_score=12 confidence=25% last_val=2.75
+2026-05-13 21:21:52 [INFO] signals — type=moon target=10.0x hunter_score=50 moon_score=45 confidence=27% last_val=3.56
+2026-05-13 21:25:01 [INFO] signals — type=moon target=20.0x hunter_score=58 moon_score=67 confidence=40% last_val=3.66
+2026-05-13 21:31:07 [INFO] signals — type=moon target=10.0x hunter_score=38 moon_score=35 confidence=31% last_val=1.27
+2026-05-13 21:51:35 [INFO] signals — type=moon target=10.0x hunter_score=7 moon_score=21 confidence=24% last_val=2.13
+2026-05-13 21:55:21 [INFO] signals — type=safe target=2.5x score=41.0 confidence=44% last_val=1.77
+2026-05-13 21:58:51 [INFO] signals — type=moon target=10.0x hunter_score=57 moon_score=59 confidence=40% last_val=1.33
+2026-05-13 22:02:09 [INFO] signals — type=moon target=10.0x hunter_score=58 moon_score=50 confidence=32% last_val=2.56
+2026-05-13 22:05:52 [INFO] signals — type=moon target=10.0x hunter_score=70 moon_score=40 confidence=20% last_val=2.49
+2026-05-13 22:09:18 [INFO] signals — type=hunter target=8.0x hunter_score=29 moon_score=10 confidence=19% last_val=3.36
+2026-05-13 22:12:38 [INFO] signals — type=moon target=10.0x hunter_score=64 moon_score=59 confidence=35% last_val=1.08
+2026-05-13 22:16:07 [INFO] signals — type=moon target=10.0x hunter_score=64 moon_score=50 confidence=25% last_val=2.04
+2026-05-13 22:21:07 [INFO] signals — type=moon target=10.0x hunter_score=45 moon_score=40 confidence=20% last_val=2.29
+2026-05-13 22:25:35 [INFO] signals — type=moon target=10.0x hunter_score=50 moon_score=41 confidence=27% last_val=1.18
